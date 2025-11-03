@@ -18,7 +18,7 @@ contract LandRegistry {
 
     function registerLand(string memory _owner, string memory _details) public {
         require(landCount < MAX_LAND_COUNT, "Maximum land registration limit reached.");
-        landCount++;
+        landCount += 1;
         lands[landCount] = Land(landCount, _owner, _details, block.timestamp);
         emit LandRegistered(landCount, _owner, _details);
     }
