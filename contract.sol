@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract LandRegistry {
+    struct Land {
+        uint id;
+        string owner;
+        string details;
+        uint256 timestamp;
+    }
+
+    mapping(uint => Land) public lands;
+    uint public landCount;
+
+    function registerLand(string memory _owner, string memory _details) public {
+        landCount++;
+        lands[landCount] = Land(landCount, _owner, _details, block.timestamp);
+    }
+
+    function getLand(uint _id) public view returns (Land memory) {
+        return lands[_id];
+    }
+}
