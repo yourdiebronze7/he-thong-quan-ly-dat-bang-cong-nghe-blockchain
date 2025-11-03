@@ -5,7 +5,7 @@ const port = 3000;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Land Registration Management System! Streamlining your experience in efficient land management.');
+  res.send('Welcome to the Land Registration Management System! Enhancing your experience in efficient land management.');
 });
 
 app.listen(port, () => {
