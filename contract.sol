@@ -12,8 +12,10 @@ contract LandRegistry {
 
     mapping(uint => Land) public lands;
     uint public landCount;
+    uint constant MAX_LAND_COUNT = 1000; // Maximum allowable lands
 
     function registerLand(string memory _owner, string memory _details) public {
+        require(landCount < MAX_LAND_COUNT, "Maximum land registration limit reached.");
         landCount++;
         lands[landCount] = Land(landCount, _owner, _details, block.timestamp);
     }
