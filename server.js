@@ -5,7 +5,7 @@ const port = 3000;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Chào mừng đến với Hệ thống quản lý định danh đất đai');
+  res.send('Chào mừng bạn đến với Hệ thống Quản lý Định danh Đất đai');
 });
 
 app.listen(port, () => {
