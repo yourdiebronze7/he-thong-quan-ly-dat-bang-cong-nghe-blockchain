@@ -1,1 +1,1 @@
-document.getElementById('app').innerHTML = '<h2>Chào mừng đến với ứng dụng quản lý đất đai!</h2>';
+document.getElementById('app').innerHTML = '<h2>Welcome to the Land Management Application!</h2>';
