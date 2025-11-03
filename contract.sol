@@ -24,6 +24,7 @@ contract LandRegistry {
     }
 
     function getLand(uint _id) public view returns (Land memory) {
+        require(_id > 0 && _id <= landCount, "Land does not exist.");
         return lands[_id];
     }
 }
