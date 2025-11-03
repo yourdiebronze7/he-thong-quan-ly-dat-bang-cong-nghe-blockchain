@@ -1,0 +1,19 @@
+{
+  "name": "he-thong-quan-ly-dat-bang-cong-nghe-blockchain",
+  "version": "1.0.0",
+  "description": "Hệ thống quản lý định danh đất đai",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "web3": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
