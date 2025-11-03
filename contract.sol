@@ -12,7 +12,7 @@ contract LandRegistry {
 
     mapping(uint => Land) public lands;
     uint public landCount;
-    uint constant MAX_LAND_COUNT = 1000; // Maximum allowable lands
+    uint constant MAX_LAND_COUNT = 1000; // Maximum allowable lands in the registry
 
     event LandRegistered(uint indexed id, string owner, string details);
 
