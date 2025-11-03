@@ -5,9 +5,9 @@ const port = 3000;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Chào mừng bạn đến với Hệ thống Quản lý Định danh Đất đai');
+  res.send('Welcome to the Land Registration Management System');
 });
 
 app.listen(port, () => {
-  console.log(`Server đang chạy tại http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
